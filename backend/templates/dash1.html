@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Clone Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="Stylesheet" href="static/css/questions.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <div class="app">
+        <aside class="sidebar">
+          <div class="sidebar-brand">Prepify</div>
+            <!-- QUESTIONS SIDEBAR -->
+            <div id="sidebar-questions">
+
+              <div class="sidebar-section">
+                <span class="sidebar-label">Library</span>
+
+                <div class="sidebar-item active" data-view="coding">
+                  <i data-lucide="code"></i>
+                  <span>Interview questions</span>
+                </div>
+
+                <div class="sidebar-item" data-view="mass">
+                  <i data-lucide="users"></i>
+                  <span>Mass Recruitment</span>
+                </div>
+
+                <div class="sidebar-item" data-view="quiz">
+                  <i data-lucide="help-circle"></i>
+                  <span>Quiz</span>
+                </div>
+
+                <div class="sidebar-item" data-view="quiz">
+                  <i data-lucide="help-circle"></i>
+                  <span>Aptitude questions</span>
+                </div>
+
+
+                <div class="sidebar-item" data-view="dsa">
+                  <i data-lucide="git-branch"></i>
+                  <span>DSA questions</span>
+                </div>
+
+                <div class="sidebar-item" data-view="sql">
+                  <i data-lucide="database"></i>
+                  <span>SQL questions</span>
+                </div>
+              </div>
+
+              <div class="sidebar-section">
+                <span class="sidebar-label">Fundamentals</span>
+
+                <div class="sidebar-item">
+                  <i data-lucide="book-open"></i>
+                  <span>Language</span>
+                </div>
+
+                <div class="sidebar-item">
+                  <i data-lucide="layers"></i>
+                  <span>OOPs Concepts</span>
+                </div>
+              </div>
+              <div class="sidebar-section">
+                <span class="sidebar-label">System Design</span>
+
+                <div class="sidebar-item">
+                  <i data-lucide="book-open"></i>
+                  <span>High Level Design</span>
+                </div>
+
+                <div class="sidebar-item">
+                  <i data-lucide="book-open"></i>
+                  <span>Low Level Design</span>
+                </div>
+              </div>
+            </div>
+            <div id="sidebar-resources" style="display:none;">
+              <!-- NOTES -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Notes</span>
+
+                <div class="sidebar-item" data-res="os">
+                  <i data-lucide="file-text"></i>
+                  <span>Operating System</span>
+                </div>
+
+                <div class="sidebar-item" data-res="dbms">
+                  <i data-lucide="database"></i>
+                  <span>DBMS</span>
+                </div>
+
+                <div class="sidebar-item" data-res="cn">
+                  <i data-lucide="network"></i>
+                  <span>Computer Networks</span>
+                </div>
+              </div>
+
+              <!-- DSA SHEETS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">DSA Sheets</span>
+
+                <div class="sidebar-item" data-res="striver">
+                  <i data-lucide="list-checks"></i>
+                  <span>Striver SDE Sheet</span>
+                </div>
+
+                <div class="sidebar-item" data-res="lovebabbar">
+                  <i data-lucide="check-square"></i>
+                  <span>Love Babbar Sheet</span>
+                </div>
+
+                <div class="sidebar-item" data-res="blind75">
+                  <i data-lucide="target"></i>
+                  <span>Blind 75</span>
+                </div>
+              </div>
+
+              <!-- COMPANY HR EMAILS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Company HR Emails</span>
+
+                <div class="sidebar-item" data-res="faang">
+                  <i data-lucide="mail"></i>
+                  <span>FAANG HR Emails</span>
+                </div>
+
+                <div class="sidebar-item" data-res="startups">
+                  <i data-lucide="briefcase"></i>
+                  <span>Startup HR Contacts</span>
+                </div>
+              </div>
+
+              <!-- EXTRAS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Extras</span>
+
+                <div class="sidebar-item" data-res="resume">
+                  <i data-lucide="file-badge"></i>
+                  <span>Resume Templates</span>
+                </div>
+
+                <div class="sidebar-item" data-res="referral">
+                  <i data-lucide="share-2"></i>
+                  <span>Referral Links</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- MOCK INTERVIEWS SIDEBAR -->
+            <div id="sidebar-mocks" style="display:none;">
+
+              <!-- PRACTICE INTERVIEWS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Practice Interviews</span>
+
+                <div class="sidebar-item" data-mock="dsa">
+                  <i data-lucide="code-2"></i>
+                  <span>DSA Mock Interview</span>
+                </div>
+
+                <div class="sidebar-item" data-mock="system">
+                  <i data-lucide="cpu"></i>
+                  <span>System Design Interview</span>
+                </div>
+
+                <div class="sidebar-item" data-mock="hr">
+                  <i data-lucide="user-check"></i>
+                  <span>HR Mock Interview</span>
+                </div>
+              </div>
+
+              <!-- COMPANY WISE -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Company Wise</span>
+
+                <div class="sidebar-item" data-mock="faang">
+                  <i data-lucide="building-2"></i>
+                  <span>FAANG Mock</span>
+                </div>
+
+                <div class="sidebar-item" data-mock="startup">
+                  <i data-lucide="rocket"></i>
+                  <span>Startup Mock</span>
+                </div>
+              </div>
+
+              <!-- LIVE / PEER -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Live & Peer</span>
+
+                <div class="sidebar-item" data-mock="peer">
+                  <i data-lucide="users"></i>
+                  <span>Peer to Peer Mock</span>
+                </div>
+
+                <div class="sidebar-item" data-mock="expert">
+                  <i data-lucide="award"></i>
+                  <span>Expert Interview</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- ASSESSMENTS SIDEBAR -->
+            <div id="sidebar-assessments" style="display:none;">
+              <div class="sidebar-section custom-assessment">
+                <div class="sidebar-item custom-item" data-assess="custom">
+                  <i data-lucide="plus-circle"></i>
+                  <span>Create Custom Assessment</span>
+                </div>
+              </div>
+
+
+              <!-- CODING ASSESSMENTS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Coding Assessments</span>
+
+                <div class="sidebar-item" data-assess="dsa">
+                  <i data-lucide="code"></i>
+                  <span>DSA Assessment</span>
+                </div>
+
+                <div class="sidebar-item" data-assess="sql">
+                  <i data-lucide="database"></i>
+                  <span>SQL Assessment</span>
+                </div>
+              </div>
+
+              <!-- CS FUNDAMENTALS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">CS Fundamentals</span>
+
+                <div class="sidebar-item" data-assess="os">
+                  <i data-lucide="cpu"></i>
+                  <span>Operating Systems</span>
+                </div>
+
+                <div class="sidebar-item" data-assess="dbms">
+                  <i data-lucide="layers"></i>
+                  <span>DBMS</span>
+                </div>
+
+                <div class="sidebar-item" data-assess="cn">
+                  <i data-lucide="network"></i>
+                  <span>Computer Networks</span>
+                </div>
+              </div>
+
+              <!-- COMPANY TESTS -->
+              <div class="sidebar-section">
+                <span class="sidebar-label">Company Tests</span>
+
+                <div class="sidebar-item" data-assess="faang">
+                  <i data-lucide="building"></i>
+                  <span>FAANG Test</span>
+                </div>
+
+                <div class="sidebar-item" data-assess="startup">
+                  <i data-lucide="rocket"></i>
+                  <span>Startup Test</span>
+                </div>
+              </div>
+
+            </div>
+
+    </aside>
+
+    <main class="main">
+      <!-- TOP NAVBAR -->
+        <div class="top-navbar">
+        <div class="nav-left">
+          <span class="nav-item active" id="tab-questions">Questions</span>
+          <span class="nav-item" id="tab-resources">Resources</span>
+          <span class="nav-item" id="tab-mocks">Mock Interview</span>
+          <span class="nav-item" id="tab-assessments">Assesments</span>
+          <span class="nav-item" id="tab-contests">Contests</span>
+          <span class="nav-item" id="tab-learning">Learning</span>
+        </div>
+      </div>
+
+
+      <!-- ================= DSA VIEW (YOUR CURRENT UI) ================= -->
+        <div class="right-view" id="dsaView">
+          <!-- TOP STATS -->
+          <section class="stats">
+            <div class="stat-card">
+              <span class="stat-title">Problems Solved</span>
+              <div class="stat-value">
+                <span class="stat-main">1005</span>
+                <span class="stat-divider">/</span>
+                <span class="stat-sub">1500</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-dot easy"></span>
+              <span class="stat-title">Easy Questions</span>
+              <div class="stat-value">
+                <span class="stat-main">542</span>
+                <span class="stat-divider">/</span>
+                <span class="stat-sub">1286</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-dot medium"></span>
+              <span class="stat-title">Medium Questions</span>
+              <div class="stat-value">
+                <span class="stat-main">365</span>
+                <span class="stat-divider">/</span>
+                <span class="stat-sub">891</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-dot hard"></span>
+              <span class="stat-title">Hard Questions</span>
+              <div class="stat-value">
+                <span class="stat-main">98</span>
+                <span class="stat-divider">/</span>
+                <span class="stat-sub">348</span>
+              </div>
+            </div>
+        </section>
+        <!-- SEARCH & FILTER BAR -->
+        <section class="filter-row">
+
+          <div class="search-box">
+            <i data-lucide="search"></i>
+            <input type="text" placeholder="Search questions..." />
+          </div>
+
+          <button class="filter-btn" id="openFilter">
+            <i data-lucide="sliders-horizontal"></i>
+            <span>Filter</span>
+          </button>
+        </section>
+        <!-- FILTER PANEL -->
+        <div class="filter-panel" id="filterPanel">
+
+          <div class="filter-header">
+            <span>Filters</span>
+            <i data-lucide="x" id="closeFilter"></i>
+          </div>
+
+          <div class="filter-group">
+            <label>Difficulty</label>
+            <select>
+              <option>All</option>
+              <option>Easy</option>
+              <option>Medium</option>
+              <option>Hard</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label>Topic</label>
+            <select>
+              <option>All</option>
+              <option>Array</option>
+              <option>String</option>
+              <option>DP</option>
+              <option>Graph</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label>Company</label>
+            <select>
+              <option>All</option>
+              <option>Google</option>
+              <option>Amazon</option>
+              <option>Meta</option>
+            </select>
+          </div>
+
+        </div>
+        <!-- WORKSPACE -->
+        <section class="workspace">
+          <div class="problems">
+            {% for q in coding_questions %}
+              <div class="problem"
+                onclick="showQuestion({{ loop.index0 }})"
+              >
+                <!-- ROW 1 -->
+                <div class="problem-row">
+                  <div class="problem-left">
+                    <span class="problem-index">{{ loop.index }}.</span>
+                    <span class="problem-title">{{ q.title }}</span>
+                  </div>
+
+                  <div class="problem-right">
+                    <span class="difficulty {{ q.difficulty | lower }}">
+                      {{ q.difficulty }}
+                    </span>
+                    <span class="acceptance">
+                      {{ q.acceptance or '--' }}%
+                    </span>
+                  </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="problem-tags">
+                  {% for tag in q.topic.split(",") %}
+                    <span class="tag">{{ tag.strip() }}</span>
+                  {% endfor %}
+                </div>
+              </div>
+
+
+            {% endfor %}
+          </div>
+
+          <div class="question-details">
+            <div class="placeholder">Select a question</div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================= INTERVIEW VIEW ================= -->
+      <div class="right-view" id="interviewView" style="display:none;">
+        <h2>Interview Questions</h2>
+        <p>This content appears when Interview Questions are Released.</p>
+      </div>
+      <div class="right-view" id="apptitudeView" style="display:none;">
+        <h2>Apptitude Questions</h2>
+        <p>This content appears when Apptitude Questions are Released.</p>
+      </div>
+      <!-- ================= RESOURCES VIEW ================= -->
+      <div class="right-view" id="resourcesView" style="display:none;">
+        <h2>Resources</h2>
+        <p>Select a resource from the sidebar</p>
+      </div>
+      <div class="right-view" id="mockView" style="display:none;">
+        <h2>Mock Interviews</h2>
+        <p>Select a mock interview from the sidebar</p>
+      </div>
+      <div class="right-view" id="assessmentView" style="display:none;">
+        <h2>Assessments</h2>
+        <p>Select an assessment from the sidebar</p>
+      </div>
+    </main>
+    </div>
+
+    <!-- ================= RESOURCES SECTION (UNCHANGED) ================= -->
+    <div id="resourcesSection" style="display:none;">
+      <h2>Resources</h2>
+      <p>Resources content goes here.</p>
+    </div>
+
+  </div>
+<script>
+  window.questionsData = {{ coding_questions | tojson }};
+</script>
+<script src="static/js/filters.js"></script>
+<script src="static/js/sidebar.js"></script>
+<script src="static/js/navbar.js"></script>
+<script src="static/js/resources.js"></script>
+<script src="static/js/icons.js"></script>
+<script src="static/js/mocks.js"></script>
+<script src="static/js/assessments.js"></script>
+<script src="static/js/questions.js"></script>
+
+</body>
+</html> 

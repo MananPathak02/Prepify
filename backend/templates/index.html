@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepify</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://unpkg.com/@vercel/geist@latest/dist/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="static/css/Dfront.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <div class="container">
+        
+        <div class="navbar">
+            <div class="logo">Prepify</div>
+
+            <div class="navbar-inner">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mock Interview</a></li>
+                    <li><a href="#">Assesments</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+            <a href="{{ url_for('dashboard') }}">
+                <button class="start-btn">
+                    <span class="status-dot"></span>
+                    Log in
+                </button>
+            </a>
+        </div>
+
+        <div class="tagline">
+            <span class="title">Ace Your Tech Interviews with</span>
+            <span class="title2">
+                <span class="gradient-text">Company-Specific</span> Coding
+            </span>
+            <span class="title2">Challenges</span>
+            <span class="desc">
+                Practice problems from top tech companies, tailored to your dream role.
+            </span>
+            <a href="{{ url_for('register') }}">
+                <button class="cta-btn">Get Started</button>
+            </a>
+        </div>
+
+    </div>
+    <!-- FLOATING TRANSITION OVERLAY -->
+     <div class="video-shell">
+    <div class="strip-halo">
+
+        <div class="halo-strip s1"></div>
+        <div class="halo-strip s2"></div>
+        <div class="halo-strip s3"></div>
+
+    </div>
+        <div class="strip-halo halo-secondary">
+        <div class="halo-strip r1"></div>
+        <div class="halo-strip r2"></div>
+        <div class="halo-strip r3"></div>
+    </div>
+
+    <div class="transition-overlay">
+        <video autoplay muted loop playsinline>
+            <source src="static/images/CSD-10721_WAC_Hero_FULL_LowBR.mp4" type="video/mp4">
+        </video>
+    </div>
+    </div>
+<div class="middle">
+    <div class="middle-header">
+    <p class="middle-eyebrow">Get structured interview questions from</p>
+    <h2 class="middle-title">Top Global Tech Companies</h2>
+</div>
+    <div class="logos-wrapper">
+        <div class="logo-row row-1">
+            <div class="row-1-track">
+                <div class="logo-box logo-big1"><img src="static/images/google-removebg-preview.png" alt="Google"></div>
+                <div class="logo-box logo-big1"><img src="static/images/meta-removebg-preview.png" alt="Meta"></div>
+                <div class="logo-box"><img src="static/images/ibm-removebg-preview.png" alt="IBM"></div>
+                <div class="logo-box logo-big2"><img src="static/images/sony-removebg-preview.png" alt="Sony"></div>
+                <div class="logo-box"><img src="static/images/accenture.png" alt="Accenture"></div>
+                    
+                <div class="logo-box logo-big1"><img src="static/images/visa-removebg-preview.png" alt="Visa"></div>
+                <div class="logo-box"><img src="static/images/netflix-logo-png-2575.png" alt="Netflix"></div>
+                <div class="logo-box logo-big"><img src="static/images/samsung-removebg-preview.png" alt="Samsung"></div>
+                <div class="logo-box"><img src="static/images/shell-removebg-preview.png" alt="Shell"></div>
+                <div class="logo-box"><img src="static/images/stripe-seeklogo.png" alt="Stripe"></div>
+                
+                <div class="logo-box logo-big2"><img src="static/images/amazon-removebg-preview.png" alt="Amazon"></div>
+                <div class="logo-box"><img src="static/images/intel-removebg-preview.png" alt="Intel"></div>
+                <div class="logo-box logo-big1"><img src="static/images/cocacola-removebg-preview.png" alt="Coca Cola"></div>
+                <div class="logo-box"><img src="static/images/Spotify_Full_Logo_RGB_Green.png" alt="Spotify"></div>
+                <div class="logo-box"><img src="static/images/MSFT_BIG.png" alt="Microsoft"></div>   
+            </div>
+        </div>
+        <div class="logo-row row-2">
+            <div class="row-2-track">
+                <div class="logo-box logo-big2"><img src="static/images/amazon-removebg-preview.png" alt="Amazon"></div>
+                <div class="logo-box"><img src="static/images/intel-removebg-preview.png" alt="Intel"></div>
+                <div class="logo-box logo-big1"><img src="static/images/cocacola-removebg-preview.png" alt="Coca Cola"></div>
+                <div class="logo-box"><img src="static/images/Spotify_Full_Logo_RGB_Green.png" alt="Spotify"></div>
+                <div class="logo-box"><img src="static/images/MSFT_BIG.png" alt="Microsoft"></div>
+
+                <div class="logo-box logo-big1"><img src="static/images/visa-removebg-preview.png" alt="Visa"></div>
+                <div class="logo-box"><img src="static/images/netflix-logo-png-2575.png" alt="Netflix"></div>
+                <div class="logo-box logo-big"><img src="static/images/samsung-removebg-preview.png" alt="Samsung"></div>
+                <div class="logo-box"><img src="static/images/shell-removebg-preview.png" alt="Shell"></div>
+                <div class="logo-box"><img src="static/images/stripe-seeklogo.png" alt="Stripe"></div>
+
+                <div class="logo-box logo-big1"><img src="static/images/google-removebg-preview.png" alt="Google"></div>
+                <div class="logo-box logo-big1"><img src="static/images/meta-removebg-preview.png" alt="Meta"></div>
+                <div class="logo-box"><img src="static/images/ibm-removebg-preview.png" alt="IBM"></div>
+                <div class="logo-box logo-big2"><img src="static/images/sony-removebg-preview.png" alt="Sony"></div>
+                <div class="logo-box"><img src="static/images/accenture.png" alt="Accenture"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="cross-wrapper">
+
+            <div class="strip strip-1">
+                <span>Google</span><span>Microsoft</span><span>Amazon</span><span>Netflix</span>
+            </div>
+
+            <div class="strip strip-2">
+                <span>Spotify</span><span>Adobe</span><span>Meta</span><span>Slack</span>
+            </div>
+
+            <div class="strip strip-3">
+                <span>Apple</span><span>Samsung</span><span>PayPal</span><span>Stripe</span>
+            </div>
+
+        </div>
+    </div>
+    <section class="split-section">
+    <div class="split-left">
+        <span class="split-eyebrow">WHY PREPIFY ?</span>
+        <h2 class="gradient-text1">
+            Interview preparation that actually reflects real interviews
+        </h2>
+        <p class="split-desc">
+            Stop solving random questions. Prepify gives you structured,
+            company-aligned interview questions, realistic mocks, and
+            progress tracking — so you know exactly where you stand.
+        </p>
+
+        <ul class="split-points">
+            <li>Company-wise & role-based question paths</li>
+            <li>Real interview patterns, not guesswork</li>
+            <li>Mock interviews with actionable feedback</li>
+        </ul>
+    </div>
+
+    <div class="split-right">
+        <!-- Replace image later -->
+        <div class="mock-visual">
+            <span>Mock Interview Dashboard</span>
+        </div>
+    </div>
+</section>
+<section class="lc-wrapper">
+    <div class="lc-topbar">
+        <div class="lc-window-controls">
+            <span class="wc close"></span>
+            <span class="wc minimize"></span>
+            <span class="wc maximize"></span>
+        </div>
+
+        <div class="lc-search">
+            <input type="text" placeholder="Search questions..." />
+            <span class="search-icon">⌕</span>
+        </div>
+    </div>
+    <div class="lc-categories">
+        <span class="lc-pill active">Arrays</span>
+        <span class="lc-pill">Strings</span>
+        <span class="lc-pill">Trees</span>
+        <span class="lc-pill">Graphs</span>
+        <span class="lc-pill">Binary Search</span>
+        <span class="lc-pill">Dynamic Programming</span>
+        <span class="lc-pill">Tries</span>
+        <span class="lc-pill">Sliding Window</span>
+    </div>
+
+    <div class="lc-table">
+        <div class="lc-header">
+            <span></span>
+            <span>Title</span>
+            <span>Acceptance</span>
+            <span>Difficulty</span>
+            <span>Status</span>
+        </div>
+
+
+        <div class="lc-row">
+            <span class="lc-check">✓</span>
+            <span class="lc-title">1. Two Sum</span>
+            <span class="lc-accept">56.9%</span>
+            <span class="lc-diff easy">Easy</span>
+            <span class="lc-icons">🔒</span>
+        </div>
+
+        <div class="lc-row active">
+            <span class="lc-check">✓</span>
+            <span class="lc-title">2. Add Two Numbers</span>
+            <span class="lc-accept">47.7%</span>
+            <span class="lc-diff medium">Med.</span>
+            <span class="lc-icons">🔒</span>
+        </div>
+
+        <div class="lc-row">
+            <span class="lc-check"></span>
+            <span class="lc-title">3. Longest Substring Without Repeating Characters</span>
+            <span class="lc-accept">38.3%</span>
+            <span class="lc-diff medium">Med.</span>
+            <span class="lc-icons">🔒</span>
+        </div>
+
+        <div class="lc-row">
+            <span class="lc-check">✓</span>
+            <span class="lc-title">4. Median of Two Sorted Arrays</span>
+            <span class="lc-accept">45.7%</span>
+            <span class="lc-diff hard">Hard</span>
+            <span class="lc-icons">🔒</span>
+        </div>
+        <div class="lc-row">
+            <span class="lc-check"></span>
+            <span class="lc-title">5. Longest Palindromic Substring</span>
+            <span class="lc-accept">45.7%</span>
+            <span class="lc-diff medium">Med.</span>
+            <span class="lc-icons">🔒</span>
+        </div>
+        <div class="lc-row">
+            <span class="lc-check">✓</span>
+            <span class="lc-title">6. ZigZag Conversion</span>
+            <span class="lc-accept">45.7%</span>
+            <span class="lc-diff medium">Med.</span>
+            <span class="lc-icons">🔒</span>
+        </div>
+    </div>
+</section>
+</div>
+</body>
+</html>
