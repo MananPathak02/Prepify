@@ -23,6 +23,9 @@ sidebarItems.forEach(item => {
 
     if (view === "aptitude")
       document.getElementById("apptitudeView").style.display = "block";
+
+    if (view === "mass")
+      document.getElementById("massView").style.display = "block";
   });
 });
 

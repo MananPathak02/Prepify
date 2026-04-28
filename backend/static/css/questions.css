@@ -632,3 +632,189 @@ button {
   color: #d1d5db;
   border: 1px solid #1f2937;
 }
+
+/* ================= PREMIUM INTERVIEW GRID ================= */
+
+.interview-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* CARD */
+.interview-card {
+  position: relative;
+  padding: 18px;
+  border-radius: 16px;
+
+  background: linear-gradient(145deg, #050505, #0b0b0c);
+  border: 1px solid #1f2937;
+
+  transition: all 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* HOVER = DEPTH */
+.interview-card:hover {
+  transform: translateY(-6px);
+  border-color: #374151;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* COMPANY (small + muted) */
+.interview-company {
+  font-size: 12px;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+}
+
+/* ROLE (main focus) */
+.interview-role {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f9fafb;
+  margin-top: 2px;
+}
+
+/* AUTHOR */
+.interview-author {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* DATE */
+.interview-date {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* ===== ARROW CTA ===== */
+
+.card-arrow {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background: #111827;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+/* ICON */
+.card-arrow svg {
+  width: 16px;
+  height: 16px;
+  color: #22c55e;
+}
+
+/* HOVER EFFECT */
+.interview-card:hover .card-arrow {
+  background: #22c55e;
+}
+
+.interview-card:hover .card-arrow svg {
+  color: black;
+  transform: translateX(2px);
+}
+#interviewView .workspace {
+  display: block;
+  width: 100%;
+}
+
+/* ================= MASS RECRUITMENT LIST ================= */
+
+/* SECTION (2 columns) */
+.company-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* 🔥 Vertical Divider */
+.company-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: #1f2937;
+}
+
+/* 🔥 Horizontal Divider between sections */
+.company-section + .company-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #1f2937;
+}
+
+/* COLUMN */
+.company-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+/* 🔥 CENTERED HEADINGS */
+.company-column h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9ca3af;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ITEM */
+.company-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 14px;
+  border-radius: 8px;
+
+  background: #000;
+  border: 1px solid #1f2937;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+.company-item:hover {
+  background: #0b0b0c;
+  border-color: #374151;
+}
+
+/* NAME */
+.company-name {
+  font-size: 14px;
+  color: #f9fafb;
+  font-weight: 500;
+}
+
+/* ARROW */
+.company-arrow {
+  color: #6b7280;
+  transition: all 0.2s ease;
+}
+
+/* HOVER ARROW EFFECT */
+.company-item:hover .company-arrow {
+  transform: translateX(5px);
+  color: #22c55e;
+}

@@ -425,13 +425,39 @@
 
       <!-- ================= INTERVIEW VIEW ================= -->
       <div class="right-view" id="interviewView" style="display:none;">
-        <h2>Interview Questions</h2>
-        <p>This content appears when Interview Questions are Released.</p>
+        <!-- 🔍 SEARCH + FILTER -->
+      <section class="filter-row">
+
+        <div class="search-box">
+          <i data-lucide="search"></i>
+          <input type="text" placeholder="Search company, role..." id="interviewSearch"/>
+        </div>
+
+        <button class="filter-btn" id="openInterviewFilter">
+          <i data-lucide="sliders-horizontal"></i>
+          <span>Filter</span>
+        </button>
+    
+      </section>
+
+      <!-- 📊 INTERVIEW LIST -->
+      <section class="workspace">
+
+        <!-- LEFT: LIST -->
+        <div class="interview-list" id="interviewList"></div>
+
+      </section>
       </div>
       <div class="right-view" id="apptitudeView" style="display:none;">
         <h2>Apptitude Questions</h2>
         <p>This content appears when Apptitude Questions are Released.</p>
       </div>
+
+      <div class="right-view" id="massView" style="display:none;">
+        <h2>Mass Recruitment</h2>
+        <p>List of companies Mass Recruiting</p>
+      </div>
+
       <!-- ================= RESOURCES VIEW ================= -->
       <div class="right-view" id="resourcesView" style="display:none;">
         <h2>Resources</h2>
@@ -457,6 +483,8 @@
   </div>
 <script>
   window.questionsData = {{ coding_questions | tojson }};
+  window.interviewsData = {{ interviews | tojson }};
+  window.companiesData = {{ companies | tojson }};
 </script>
 <script src="static/js/filters.js"></script>
 <script src="static/js/sidebar.js"></script>
@@ -466,6 +494,8 @@
 <script src="static/js/mocks.js"></script>
 <script src="static/js/assessments.js"></script>
 <script src="static/js/questions.js"></script>
+<script src="static/js/interview.js"></script>
+<script src="static/js/massView.js"></script>
 
 </body>
 </html> 

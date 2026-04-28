@@ -156,10 +156,27 @@ def dashboard():
         {"email": session["user_email"]},
         {"_id": 0, "password": 0}
     )
+
     coding_questions = list(
         db.coding_questions.find({}, {"_id": 0})
     )
-    return render_template("dash1.html", user=user, coding_questions=coding_questions)
+
+    # ✅ FETCH INTERVIEWS (PUBLIC DATA)
+    interviews = list(
+        db.interviews.find({}, {"_id": 0})
+    )
+
+    companies = list(
+        db.companies.find({}, {"_id": 0})
+    )
+
+    return render_template(
+        "dash1.html",
+        user=user,
+        coding_questions=coding_questions,
+        interviews=interviews,
+        companies=companies   # ✅ NEW
+    )
 
 # Logout
 @app.route("/logout")
